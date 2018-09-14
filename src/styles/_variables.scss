@@ -1,7 +1,45 @@
 @import "functions";
 
-// Colors
-$color-background: #000;
+/* ===========================
+//COLORS
+===========================*/
 
-// Shadow background
+$color-background: #000;
+$box-shadow-primary: rgba(0,0,0,0.5);
+$box-shadow-secondary: rgba(255,255,255,0.5);
+$box-shadow-terciary: rgba(0,0,0,0.75);
+$background-button: #f00;
+
+/* ===========================
+//EFFECTS
+===========================*/
+
+$transition: all 0.1s ease;
+$box-shadow-button: inset 0 -5px 20px $box-shadow-primary,
+             inset 0 15px 20px $box-shadow-secondary,
+             0 5px 10px $box-shadow-terciary,
+             0 10px 10px $box-shadow-primary;
+$box-shadow-button-before: inset 0 7px 15px $box-shadow-secondary, inset 0 -7px 15px $box-shadow-primary;
+$box-shadow-button-active: inset 0 0 20px $box-shadow-primary;
+
+/* ===========================
+//ELEMENTS
+===========================*/
+
+$box-sizing: border-box;
+
+/* ===========================
+//SHADOW BACKGROUND
+===========================*/
+
 $shadows-stars: multiple-box-shadow(700);
+
+/* ===========================
+//BREAKPOINTS
+===========================*/
+
+$screen-xs-min: 320px;
+$screen-sm-min: 360px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;

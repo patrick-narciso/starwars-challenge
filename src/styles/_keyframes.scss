@@ -6,3 +6,9 @@
     transform: translateY(-2000px);
   }
 }
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
