@@ -5,6 +5,7 @@ import router from './router';
 import store from './store';
 
 import 'vuesax/dist/vuesax.css';
+import 'flexboxgrid/dist/flexboxgrid.min.css';
 
 Vue.use(Vuesax);
 
