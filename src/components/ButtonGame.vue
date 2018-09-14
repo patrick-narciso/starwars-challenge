@@ -15,14 +15,12 @@
 a {
     position: absolute;
     display: block;
-    width: 120px;
-    height: 120px;
-    margin: -100px 0 0 -100px;
+    width: 90px;
+    height: 90px;
     @extend %border-radius;
     @extend %box-shadow;
     @extend %box-sizing;
     @extend %button-transition;
-    padding: 78px 9px 0 0;
     cursor: pointer;
 
     &:before {
@@ -30,8 +28,8 @@ a {
         display: block;
         content: " ";
         z-index: -5;
-        width: 160px;
-        height: 160px;
+        width: 129px;
+        height: 129px;
         @extend %border-radius;
         @extend %box-shadow-before;
         background: $background-button;

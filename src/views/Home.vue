@@ -1,13 +1,6 @@
 <template>
   <div class="home">
     <banner></banner>
-    <div class="row">
-      <div class="col-xs-12 col-xs-offset-6 col-md-offset-6">
-        <div class="box">
-          <button-game class="home__button"></button-game>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 

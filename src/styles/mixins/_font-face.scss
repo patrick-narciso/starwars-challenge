@@ -1,12 +1,12 @@
-@mixin fontface($name, $file, $weight: normal, $style: normal){
+@mixin font-face($font-family, $folder, $file) {
   @font-face {
-    font-family: "#{$name}";
-    //src: url('../fonts/#{$file}.eot');
-    //src: url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype'),
-    //url('../fonts/#{$file}.woff') format('woff'),
-    src: url('/fonts/#{$file}.ttf') format('truetype');
-    //url('../fonts/#{$file}.svg?#webfont') format('svg');
-    font-weight: $weight;
-    font-style: $style;
+    font-family: '#{$font-family}';
+    src: url('https://s3.amazonaws.com/star-wars-challenge/fonts/#{$folder}/#{$file}.eot');
+    src: url('https://s3.amazonaws.com/star-wars-challenge/fonts/#{$folder}/#{$file}.eot?#iefix') format('embedded-opentype'),
+    url('https://s3.amazonaws.com/star-wars-challenge/fonts/#{$folder}/#{$file}.woff') format('woff'),
+    url('https://s3.amazonaws.com/star-wars-challenge/fonts/#{$folder}/#{$file}.ttf') format('truetype'),
+    url('https://s3.amazonaws.com/star-wars-challenge/fonts/#{$folder}/#{$file}.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
   }
 }
