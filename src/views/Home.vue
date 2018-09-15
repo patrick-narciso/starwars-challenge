@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <banner></banner>
+    <banner class="home__banner" :msg="msg"></banner>
+    <button-game class="home__button"></button-game>
   </div>
 </template>
 
@@ -11,6 +12,11 @@ import ButtonGame from '@/components/ButtonGame.vue';
 
 export default {
   name: 'home',
+  data () {
+    return {
+      msg: 'play'
+    }
+  },
   components: {
       Banner,
       ButtonGame
@@ -21,16 +27,17 @@ export default {
 <style scoped lang="scss">
 @import '../styles/mixins/_media-queries';
 
-.home__button {
-  @include xs {
-    top: 80vh;
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  .home__banner {
+    flex: 1;
   }
-  @include sm {
-    top: 82vh;
+  .home__button {
+    flex: 1;
+    margin-top: 8vh;
   }
-  @include md {
-    top: 90vh;
-  }
-  top: 70vh;
 }
 </style>
