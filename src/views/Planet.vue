@@ -1,9 +1,9 @@
 <template>
   <div class="planets">
     <main v-show="!loading">
-      <card class="planets__card"></card>
+      <card :planet="planet" class="planets__card"></card>
       <h3 class="planets__title">next</h3>
-      <button-game class="planets__button"></button-game>
+      <button-game :onClick="getPlanet" class="planets__button"></button-game>
     </main>
     <loading v-show="loading"></loading>
   </div>
@@ -27,6 +27,11 @@
       Card,
       ButtonGame,
       Loading
+    },
+    computed: {
+      planet () {
+        return this.$store.state.planet;
+      }
     },
     mounted () {
       this.getPlanet();

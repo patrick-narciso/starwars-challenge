@@ -1,12 +1,18 @@
 <template>
     <div class="container">
-        <a class="container__button" role="button"></a>
+        <a @click="onClick" class="container__button" role="button"></a>
     </div>
 </template>
 
 <script>
   export default {
-    name: "ButtonGame"
+    name: "ButtonGame",
+    props: {
+      onClick: {
+        type: Function,
+        required: true
+      }
+    }
   }
 </script>
 

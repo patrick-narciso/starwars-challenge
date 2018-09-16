@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <banner class="home__banner" :msg="msg"></banner>
-    <button-game class="home__button"></button-game>
+    <button-game :onClick="play" class="home__button"></button-game>
   </div>
 </template>
 
@@ -20,6 +20,11 @@ export default {
   components: {
       Banner,
       ButtonGame
+  },
+  methods: {
+    play () {
+      this.$router.push('planet');
+    }
   }
 }
 </script>
