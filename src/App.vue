@@ -38,6 +38,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #fff;
+  color: $font-body;
 }
 </style>
