@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
-import Planets from './views/Planets';
+import Planet from './views/Planet.vue';
 
 Vue.use(Router);
 
@@ -13,9 +13,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/planets',
-      name: 'planets',
-      component: Planets
+      path: '/planet',
+      name: 'planet',
+      component: Planet
     }
   ]
 })
