@@ -12,7 +12,6 @@
 html {
   height: 100%;
   background: $color-background;
-  overflow: hidden;
 }
 #stars {
   width: 2px;
