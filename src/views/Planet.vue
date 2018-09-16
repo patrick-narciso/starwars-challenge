@@ -14,6 +14,7 @@
   import ButtonGame from '@/components/ButtonGame.vue';
   import Loading from '@/components/Loading.vue';
   import planets from '@/services/planets.js';
+  import { mapActions } from 'vuex';
 
   export default {
     name: "planet",
@@ -31,12 +32,15 @@
       this.getPlanet();
     },
     methods: {
+      ...mapActions ({
+        savePlanet: 'SET_PLANET'
+      }),
       getPlanet () {
         this.loading = true;
         let planetId = Math.floor(Math.random() * 61 + 1);
         return planets.getPlanet(planetId)
           .then(planet => {
-          console.log(planet);
+          this.savePlanet(planet);
         })
           .catch()
           .finally(() => this.loading = false);
