@@ -8,6 +8,9 @@
 <style lang="scss">
 @import "./styles/keyframes";
 @import "./styles/variables";
+@import './styles/mixins/_font-face';
+@include font-face(Star-Jedi, 'starjedi', 'starjedi');
+@include font-face(Game-Over, 'game_over', 'game_over');
 
 html {
   height: 100%;

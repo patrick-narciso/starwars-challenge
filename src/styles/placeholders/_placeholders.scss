@@ -33,3 +33,10 @@
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+
+%flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}

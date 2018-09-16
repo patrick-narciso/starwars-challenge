@@ -26,12 +26,10 @@ export default {
 
 <style scoped lang="scss">
 @import '../styles/mixins/_media-queries';
+@import '../styles/placeholders/_placeholders';
 
 .home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  @extend %flexbox;
   .home__banner {
     flex: 1;
   }
