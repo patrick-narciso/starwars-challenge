@@ -12,7 +12,7 @@
              src="https://s3.amazonaws.com/star-wars-challenge/starwars.png"
              alt="Logo Star Wars">
         <ul class="card__content--data">
-          <li><strong>Diameter:</strong>{{planet.diameter}}</li>
+          <li><strong>Diameter: </strong>{{planet.diameter}}</li>
           <li><strong>Climate: </strong>{{planet.climate}}</li>
           <li><strong>Gravity: </strong>{{planet.gravity}}</li>
           <li><strong>Terrain: </strong>{{planet.terrain}}</li>
@@ -46,7 +46,7 @@
     border-radius: 23px;
     width: 300px;
     height: auto;
-    margin-top: 15vh;
+    margin-top: 12vh;
   }
 }
 .card__header {

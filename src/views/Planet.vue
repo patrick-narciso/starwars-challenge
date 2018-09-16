@@ -47,7 +47,7 @@
           .then(planet => {
           this.savePlanet(planet);
         })
-          .catch()
+          .catch(() => this.$router.push('error'))
           .finally(() => this.loading = false);
       }
     }
